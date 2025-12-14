@@ -1,0 +1,86 @@
+[
+  {
+    "code": "4A",
+    "name": "Watermelon",
+    "tags": "Math, Implementation",
+    "rating": 800
+  },
+  {
+    "code": "1999A",
+    "name": "A + B Again?",
+    "tags": "Math, Implementation",
+    "rating": 800
+  },
+  {
+    "code": "50A",
+    "name": "Domino piling",
+    "tags": "Math, Implementation",
+    "rating": 800
+  },
+  {
+    "code": "1742A",
+    "name": "Sum",
+    "tags": "Math, Implementation",
+    "rating": 800
+  },
+  {
+    "code": "71A",
+    "name": "Way Too Long Words",
+    "tags": "Math, Implementation",
+    "rating": 800
+  },
+  {
+    "code": "271A",
+    "name": "Beautiful Year",
+    "tags": "Math, Implementation",
+    "rating": 800
+  },
+  {
+    "code": "486A",
+    "name": "Calculating Function",
+    "tags": "Math, Implementation",
+    "rating": 800
+  },
+  {
+    "code": "200B",
+    "name": "Drinks",
+    "tags": "Math, Implementation",
+    "rating": 900
+  },
+  {
+    "code": "617A",
+    "name": "Elephant",
+    "tags": "Math, Implementation",
+    "rating": 800
+  },
+  {
+    "code": "705A",
+    "name": "Hulk",
+    "tags": "Math, Implementation",
+    "rating": 800
+  },
+  {
+    "code": "2167A",
+    "name": "Square?",
+    "tags": "Math, Implementation",
+    "rating": 800
+  },
+  {
+    "code": "2166B",
+    "name": "Tab Closing",
+    "tags": "Math, Implementation",
+    "rating": 900
+  },
+  {
+    "code": "723A",
+    "name": "The New Year: Meeting Friends",
+    "tags": "Math, Implementation",
+    "rating": 800
+  },
+  {
+    "code": "2171B",
+    "name": "Yuu Koito And Minimum Absolute Sum",
+    "tags": "Math, Implementation",
+    "rating": 900
+  }
+]

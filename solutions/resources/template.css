@@ -1,0 +1,495 @@
+    /* ===================== BASE ===================== */
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #0d0d12;
+      color: white;
+    }
+
+    /* ==================== HERO HEADER (MATCHING HOMEPAGE) ==================== */
+    .hero-header {
+      padding: 40px 40px 35px 40px;
+      text-align: center;
+      background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(13,13,18,0) 100%);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      position: relative;
+    }
+
+    .header-top {
+      position: absolute;
+      left: 40px;
+      top: 40px;
+    }
+
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #88aaff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      padding: 8px 16px;
+      background: rgba(136, 170, 255, 0.1);
+      border: 1px solid rgba(136, 170, 255, 0.2);
+      border-radius: 6px;
+      transition: all 0.3s ease;
+    }
+
+    .back-btn:hover {
+      background: rgba(136, 170, 255, 0.2);
+      border-color: rgba(136, 170, 255, 0.4);
+      transform: translateX(-3px);
+    }
+
+    .back-btn svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    .main-title {
+      font-size: 42px;
+      font-weight: 700;
+      margin: 0 0 12px 0;
+      background: linear-gradient(90deg, #ff88ff, #88aaff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      line-height: 1.2;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      color: rgba(255,255,255,0.6);
+      margin: 0;
+      font-weight: 400;
+    }
+
+    /* ===================== SPLIT VIEW ===================== */
+    .split-container {
+      display: flex;
+      height: calc(100vh - 180px);
+      width: 100%;
+    }
+
+    /* ===================== LEFT PANEL (EXPLANATION STYLE) ===================== */
+    .left-panel {
+      flex: 1;
+      padding: 30px;
+      overflow-y: auto;
+      background: rgba(255,255,255,0.03);
+      border-right: 1px solid rgba(255,255,255,0.12);
+    }
+
+    .section-title {
+      margin-top: 0;
+      margin-bottom: 15px;
+      font-size: 20px;
+      opacity: 0.9;
+    }
+
+    #explanation-box {
+      background: rgba(0,0,0,0.35);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 10px;
+      padding: 18px;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    /* ===================== GITHUB-STYLE MARKDOWN ===================== */
+    #explanation-box h1,
+    #explanation-box h2,
+    #explanation-box h3,
+    #explanation-box h4,
+    #explanation-box h5,
+    #explanation-box h6 {
+      margin-top: 24px;
+      margin-bottom: 16px;
+      font-weight: 600;
+      line-height: 1.25;
+      color: #fff;
+    }
+
+    #explanation-box h1 {
+      font-size: 2em;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      padding-bottom: 0.3em;
+    }
+
+    #explanation-box h2 {
+      font-size: 1.5em;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      padding-bottom: 0.3em;
+    }
+
+    #explanation-box h3 {
+      font-size: 1.25em;
+    }
+
+    #explanation-box h4 {
+      font-size: 1em;
+    }
+
+    #explanation-box h5 {
+      font-size: 0.875em;
+    }
+
+    #explanation-box h6 {
+      font-size: 0.85em;
+      color: rgba(255,255,255,0.7);
+    }
+
+    #explanation-box p {
+      margin-top: 0;
+      margin-bottom: 16px;
+    }
+
+    #explanation-box ul,
+    #explanation-box ol {
+      padding-left: 2em;
+      margin-top: 0;
+      margin-bottom: 16px;
+    }
+
+    #explanation-box li {
+      margin-top: 0.25em;
+    }
+
+    #explanation-box li + li {
+      margin-top: 0.25em;
+    }
+
+    #explanation-box code {
+      background: rgba(255,255,255,0.1);
+      padding: 0.2em 0.4em;
+      border-radius: 3px;
+      font-family: 'Fira Code', monospace;
+      font-size: 85%;
+      color: #ff88ff;
+    }
+
+    #explanation-box pre {
+      background: rgba(0,0,0,0.5);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 6px;
+      padding: 16px;
+      overflow: auto;
+      margin-bottom: 16px;
+      line-height: 1.45;
+    }
+
+    #explanation-box pre code {
+      background: transparent;
+      padding: 0;
+      color: #d4d4d4;
+      font-size: 100%;
+    }
+
+    #explanation-box blockquote {
+      padding: 0 1em;
+      color: rgba(255,255,255,0.7);
+      border-left: 0.25em solid rgba(136, 170, 255, 0.5);
+      margin: 0 0 16px 0;
+    }
+
+    #explanation-box blockquote > :first-child {
+      margin-top: 0;
+    }
+
+    #explanation-box blockquote > :last-child {
+      margin-bottom: 0;
+    }
+
+    #explanation-box table {
+      border-spacing: 0;
+      border-collapse: collapse;
+      margin-bottom: 16px;
+      width: 100%;
+    }
+
+    #explanation-box table th,
+    #explanation-box table td {
+      padding: 6px 13px;
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+
+    #explanation-box table th {
+      background: rgba(255,255,255,0.1);
+      font-weight: 600;
+    }
+
+    #explanation-box table tr:nth-child(2n) {
+      background: rgba(255,255,255,0.03);
+    }
+
+    #explanation-box a {
+      color: #88aaff;
+      text-decoration: none;
+    }
+
+    #explanation-box a:hover {
+      text-decoration: underline;
+    }
+
+    #explanation-box hr {
+      height: 0.25em;
+      padding: 0;
+      margin: 24px 0;
+      background-color: rgba(255,255,255,0.1);
+      border: 0;
+    }
+
+    #explanation-box img {
+      max-width: 100%;
+      border-radius: 6px;
+    }
+
+    #explanation-box strong {
+      font-weight: 600;
+      color: #fff;
+    }
+
+    #explanation-box em {
+      font-style: italic;
+      color: rgba(255,255,255,0.9);
+    }
+
+    /* ===================== RIGHT PANEL (CODE STYLE) ===================== */
+    .right-panel {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      background: rgba(0,0,0,0.45);
+      padding: 20px;
+    }
+
+    .code-box-wrapper {
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .code-header {
+      padding: 14px 20px;
+      border-bottom: 1px solid rgba(255,255,255,0.12);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0,0,0,0.3);
+    }
+
+    .code-header h2 {
+      margin: 0;
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
+    .code-header-right {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .line-count {
+      font-size: 13px;
+      color: rgba(255,255,255,0.6);
+      font-weight: 400;
+    }
+
+    .copy-btn {
+      background: rgba(136, 170, 255, 0.15);
+      border: 1px solid rgba(136, 170, 255, 0.3);
+      color: #88aaff;
+      padding: 6px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 600;
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .copy-btn:hover {
+      background: rgba(136, 170, 255, 0.25);
+      border-color: rgba(136, 170, 255, 0.5);
+      transform: translateY(-1px);
+    }
+
+    .copy-btn:active {
+      transform: translateY(0);
+    }
+
+    .copy-btn.copied {
+      background: rgba(76, 201, 176, 0.2);
+      border-color: rgba(76, 201, 176, 0.5);
+      color: #4ec9b0;
+    }
+
+    .code-container {
+      flex: 1;
+      overflow: auto;
+      background: #1e1e1e;
+    }
+
+    /* ===================== VS CODE STYLE LINE NUMBERS ===================== */
+    .code-wrapper {
+      display: flex;
+      min-height: 100%;
+      background: #1e1e1e;
+    }
+
+    .line-numbers {
+      padding: 20px 16px 20px 20px;
+      text-align: right;
+      background: #1e1e1e;
+      user-select: none;
+      font-family: 'Fira Code', monospace;
+      font-size: 14px;
+      line-height: 1.55;
+      color: rgba(255,255,255,0.25);
+      min-width: 45px;
+    }
+
+    .line-numbers div {
+      height: 21.7px;
+    }
+
+    #code-box {
+      margin: 0;
+      padding: 20px 20px 20px 0;
+      font-family: 'Fira Code', monospace;
+      font-size: 14px;
+      line-height: 1.55;
+      color: #d4d4d4;
+      white-space: pre;
+      background: transparent;
+      flex: 1;
+    }
+
+    /* ===================== SYNTAX HIGHLIGHT ===================== */
+    .keyword { color: #569cd6; }
+    .type { color: #4ec9b0; }
+    .stl { color: #dcdcaa; }
+    .string { color: #ce9178; }
+    .comment { color: #6a9955; font-style: italic; }
+    .function { color: #dcdcaa; }
+    .number { color: #b5cea8; }
+    .preprocessor { color: #c586c0; }
+
+    /* ===================== LOADING ===================== */
+    .loading {
+      opacity: 0.6;
+    }
+
+    /* ===================== SCROLLBARS ===================== */
+    .left-panel::-webkit-scrollbar,
+    .code-container::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+    }
+
+    .left-panel::-webkit-scrollbar-thumb,
+    .code-container::-webkit-scrollbar-thumb {
+      background: rgba(255,255,255,0.25);
+      border-radius: 6px;
+    }
+
+    .left-panel::-webkit-scrollbar-track,
+    .code-container::-webkit-scrollbar-track {
+      background: rgba(0,0,0,0.2);
+    }
+
+    /* ===================== COPY ICON ===================== */
+    .copy-icon {
+      width: 14px;
+      height: 14px;
+    }
+
+    /* ===================== RESPONSIVE ===================== */
+    @media (max-width: 900px) {
+      .hero-header {
+        padding: 30px 30px 25px 30px;
+      }
+
+      .header-top {
+        position: static;
+        margin-bottom: 20px;
+      }
+
+      .main-title {
+        font-size: 32px;
+      }
+
+      .subtitle {
+        font-size: 14px;
+      }
+
+      .split-container {
+        flex-direction: column;
+        height: auto;
+      }
+
+      .code-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      .code-header-right {
+        width: 100%;
+        justify-content: space-between;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .hero-header {
+        padding: 25px 20px 20px 20px;
+      }
+
+      .header-top {
+        left: 20px;
+        top: 25px;
+      }
+
+      .main-title {
+        font-size: 26px;
+        margin-top: 30px;
+      }
+
+      .back-btn {
+        font-size: 13px;
+        padding: 6px 12px;
+      }
+
+      .left-panel, .right-panel {
+        padding: 20px;
+      }
+
+      .section-title {
+        font-size: 18px;
+      }
+
+      .code-header h2 {
+        font-size: 16px;
+      }
+
+      .line-numbers {
+        padding-left: 10px;
+        padding-right: 8px;
+        min-width: 40px;
+      }
+
+      #code-box {
+        padding: 15px 15px 15px 0;
+      }
+    }
+    
