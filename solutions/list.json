@@ -82,5 +82,11 @@
     "name": "Yuu Koito And Minimum Absolute Sum",
     "tags": "Math, Implementation",
     "rating": 900
+  },
+  {
+    "code": "1656A",
+    "name": "Good Pairs",
+    "tags": "Math, Implementation",
+    "rating": 800
   }
 ]
