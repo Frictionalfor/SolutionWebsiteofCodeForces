@@ -58,7 +58,7 @@ The structure is intentionally lean and focused:
 
 Hit the link below to see the aesthetic in action:
 
-[**CLICK HERE FOR PROJECT SOUTA**](#) *(Don't forget to replace the `#` with your actual URL!)*
+[**CLICK HERE FOR PROJECT SOUTA**](https://frictionalfor.github.io/SolutionWebsiteofCodeForces/) 
 
 ---
 
